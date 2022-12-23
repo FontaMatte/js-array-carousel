@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-/* REGOLE GENERALI */
-.flex {
-    display: flex;
-}
-
 /* Regole main */
 .carousel-container {
     width: 100%;
