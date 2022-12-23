@@ -6,7 +6,7 @@
 }
 
 /* Regole main */
-.carousel-container {
+main {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -41,9 +41,19 @@
     top: calc(100% - 40px);
 }
 
-.carousel img {
+.carousel .slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carousel .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.carousel .current {
+    display: block;
 }
 
