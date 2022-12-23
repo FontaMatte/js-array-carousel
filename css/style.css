@@ -19,26 +19,28 @@ main {
     transform: translate(-50%, -50%);
     width: 50%;
     height: 50%;
-    border: 1px dashed black;
 }
 
 .carousel .previous,
 .carousel .next {
     position: absolute;
     left: 50%;
+    top: 10px;
     transform: translateX(-50%);
     height: 40px;
     width: 40px;
-    background-color: rgba(red, green, blue, 0.7);
+    background-color: rgba( 255, 255, 255, 0.7);
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
     border-radius: 50%;
     line-height: 40px;
+    transform: rotate(90deg);
 }
 
 .carousel .next {
-    top: calc(100% - 40px);
+    top: calc(100% - 50px);
+    transform: rotate(90deg);
 }
 
 .carousel .slide {
@@ -55,5 +57,9 @@ main {
 
 .carousel .current {
     display: block;
+}
+
+.hidden {
+    display: none;
 }
 
