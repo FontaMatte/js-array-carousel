@@ -1,0 +1,70 @@
+/* REGOLE DI RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Regole main */
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.carousel .previous,
+.carousel .next {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 40px;
+    background-color: rgba( 255, 255, 255, 0.7);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    transform: rotate(90deg);
+}
+
+.carousel .next {
+    top: calc(100% - 50px);
+    transform: rotate(90deg);
+}
+
+.carousel .previous:hover,
+.carousel .next:hover {
+    cursor: pointer;
+}
+
+.carousel .slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .current {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
